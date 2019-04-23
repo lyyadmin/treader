@@ -14,17 +14,17 @@ public class FileActivity$$ViewBinder<T extends com.support.treader.FileActivity
     target.toolbar = finder.castView(view, 2131361925, "field 'toolbar'");
     view = finder.findRequiredView(source, 2131361932, "field 'btnChooseAll'");
     target.btnChooseAll = finder.castView(view, 2131361932, "field 'btnChooseAll'");
-    view = finder.findRequiredView(source, 2131361934, "field 'btnAddFile'");
-    target.btnAddFile = finder.castView(view, 2131361934, "field 'btnAddFile'");
     view = finder.findRequiredView(source, 2131361931, "field 'lvFileDrawer'");
     target.lvFileDrawer = finder.castView(view, 2131361931, "field 'lvFileDrawer'");
+    view = finder.findRequiredView(source, 2131361934, "field 'btnAddFile'");
+    target.btnAddFile = finder.castView(view, 2131361934, "field 'btnAddFile'");
   }
 
   @Override public void unbind(T target) {
     target.btnDelete = null;
     target.toolbar = null;
     target.btnChooseAll = null;
-    target.btnAddFile = null;
     target.lvFileDrawer = null;
+    target.btnAddFile = null;
   }
 }

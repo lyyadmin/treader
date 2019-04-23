@@ -8,6 +8,16 @@ import butterknife.ButterKnife.ViewBinder;
 public class AboutActivity$$ViewBinder<T extends com.support.treader.AboutActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
+    view = finder.findRequiredView(source, 2131361923, "field 'bannner' and method 'onClick'");
+    target.bannner = finder.castView(view, 2131361923, "field 'bannner'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onClick(p0);
+        }
+      });
     view = finder.findRequiredView(source, 2131361921, "field 'appBar' and method 'onClick'");
     target.appBar = finder.castView(view, 2131361921, "field 'appBar'");
     view.setOnClickListener(
@@ -28,8 +38,8 @@ public class AboutActivity$$ViewBinder<T extends com.support.treader.AboutActivi
           target.onClick(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131361923, "field 'bannner' and method 'onClick'");
-    target.bannner = finder.castView(view, 2131361923, "field 'bannner'");
+    view = finder.findRequiredView(source, 2131361925, "field 'toolbar' and method 'onClick'");
+    target.toolbar = finder.castView(view, 2131361925, "field 'toolbar'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -58,24 +68,14 @@ public class AboutActivity$$ViewBinder<T extends com.support.treader.AboutActivi
           target.onClick(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131361925, "field 'toolbar' and method 'onClick'");
-    target.toolbar = finder.castView(view, 2131361925, "field 'toolbar'");
-    view.setOnClickListener(
-      new butterknife.internal.DebouncingOnClickListener() {
-        @Override public void doClick(
-          android.view.View p0
-        ) {
-          target.onClick(p0);
-        }
-      });
   }
 
   @Override public void unbind(T target) {
+    target.bannner = null;
     target.appBar = null;
     target.coord = null;
-    target.bannner = null;
+    target.toolbar = null;
     target.tvVersion = null;
     target.toolbarLayout = null;
-    target.toolbar = null;
   }
 }
